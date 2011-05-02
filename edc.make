@@ -42,9 +42,15 @@ projects[] = advanced_help
 projects[] = date
 projects[] = calendar
 projects[] = jquery_ui
+projects[] = skinr
+
+; Themes
+projects[] = adaptivetheme
+projects[at_edc][type] = "theme"
+projects[at_edc][location] = "https://github.com/edc-it/at_edc.git"
 
 ; Libraries
 libraries[jquery_ui][download][type] = "get"
 libraries[jquery_ui][download][url] = "http://jquery-ui.googlecode.com/files/jquery.ui-1.6.zip"
 libraries[jquery_ui][directory_name] = "jquery.ui"
-libraries[jquery_ui][destination] = "modules/contrib/jquery_ui"
+libraries[jquery_ui][destination] = "modules/jquery_ui"

@@ -15,6 +15,9 @@ function edc_profile_modules() {
   // contrib modules
   'views', 'views_ui','token', 'pathauto',
 
+  // theme layer
+  'skinr',
+
   // cck and submodules
   'content', 'text', 'number', 'optionwidgets',
   'filefield', 'imagefield', 'imageapi', 'imageapi_gd', 'imagecache', 'imagecache_ui',
@@ -142,8 +145,25 @@ function edc_profile_tasks(&$task, $url) {
   variable_set('reroute_email_address', $reroute);
 
   // Set default timezone to that of the server.
-  $tz_offset = date('Z');
+  $tz_offset = -14400;
   variable_set('date_default_timezone', $tz_offset);
+  $tz_name = 'America/New_York';
+  variable_set('date_default_timezone_name', $tz_name);
+
+  //Set up themes
+  // Disable garland
+  db_query("UPDATE {system} SET status = 0 WHERE type = 'theme' and name = '%s'", 'garland');
+
+  // Enable AdaptiveTheme
+  db_query("UPDATE {system} SET status = 1 WHERE type = 'theme' and name = '%s'", 'at_edc');
+
+  // Set AT theme as the default
+  variable_set('theme_default', 'at_edc');
+  variable_set('admin_theme', 'adaptivetheme_admin');
+
+  // Refresh registry
+  list_themes(TRUE);
+  drupal_rebuild_theme_registry();
 
   // Update the menu router information.
   menu_rebuild();
