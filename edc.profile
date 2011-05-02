@@ -8,7 +8,7 @@
  *   An array of modules to enable.
  */
 function edc_profile_modules() {
-  return array('help', 'menu', 'taxonomy', 'dblog', 'views', 'views_ui', 'content', 'text', 'number', 'optionwidgets', 'admin', 'token', 'path', 'pathauto', 'devel');
+  return array('help', 'menu', 'taxonomy', 'dblog', 'views', 'views_ui', 'content', 'text', 'number', 'optionwidgets', 'admin', 'token', 'path', 'pathauto', 'devel', 'environment_indicator', 'reroute_email');
 }
 
 /**
@@ -122,6 +122,10 @@ function edc_profile_tasks(&$task, $url) {
   $theme_settings['toggle_node_info_page'] = FALSE;
   variable_set('theme_settings', $theme_settings);
 
+  // Set reroute email var
+  $reroute = variable_get('site_mail', 'epeterson@edc.org');
+  variable_set('reroute_email_address', $reroute);
+
   // Update the menu router information.
   menu_rebuild();
 }
@@ -136,5 +140,8 @@ function edc_form_alter(&$form, $form_state, $form_id) {
   if ($form_id == 'install_configure') {
     // Set default for site name field.
     $form['site_information']['site_name']['#default_value'] = $_SERVER['SERVER_NAME'];
+    $form['site_information']['site_mail']['#default_value'] = 'epeterson@edc.org';
+    $form['admin_account']['account']['name']['#default_value'] = 'user1';
+    $form['admin_account']['account']['mail']['#default_value'] = 'epeterson@edc.org';
   }
 }
