@@ -8,7 +8,22 @@
  *   An array of modules to enable.
  */
 function edc_profile_modules() {
-  return array('help', 'menu', 'taxonomy', 'dblog', 'views', 'views_ui', 'content', 'text', 'number', 'optionwidgets', 'admin', 'token', 'path', 'pathauto', 'devel', 'environment_indicator', 'reroute_email');
+  return array(
+  // core modules
+  'help', 'menu', 'taxonomy', 'path', 'dblog',
+
+  // contrib modules
+  'views', 'views_ui','token', 'pathauto', 'date',
+
+  // cck and submodules
+  'content', 'text', 'number', 'optionwidgets',
+  'filefield', 'imagefield', 'imageapi', 'imageapi_gd', 'imagecache', 'imagecache_ui',
+  'calendar',
+
+  // some development and administration modules
+  'admin', 'adminrole',
+  'advanced_help', 'devel', 'environment_indicator', 'reroute_email',
+  );
 }
 
 /**
