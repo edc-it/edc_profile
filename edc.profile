@@ -18,7 +18,7 @@ function edc_profile_modules() {
   // cck and submodules
   'content', 'text', 'number', 'optionwidgets',
   'filefield', 'imagefield', 'imageapi', 'imageapi_gd', 'imagecache', 'imagecache_ui',
-  'calendar', 'date_api', 'date_timezone', 'date',
+  'calendar', 'date_api', 'date_timezone', 'date', 'jquery_ui', 'date_popup',
 
   // some development and administration modules
   'admin', 'adminrole',
@@ -140,6 +140,10 @@ function edc_profile_tasks(&$task, $url) {
   // Set reroute email var
   $reroute = variable_get('site_mail', 'epeterson@edc.org');
   variable_set('reroute_email_address', $reroute);
+
+  // Set default timezone to that of the server.
+  $tz_offset = date('Z');
+  variable_set('date_default_timezone', $tz_offset);
 
   // Update the menu router information.
   menu_rebuild();
