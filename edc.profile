@@ -13,12 +13,12 @@ function edc_profile_modules() {
   'help', 'menu', 'taxonomy', 'path', 'dblog',
 
   // contrib modules
-  'views', 'views_ui','token', 'pathauto', 'date',
+  'views', 'views_ui','token', 'pathauto',
 
   // cck and submodules
   'content', 'text', 'number', 'optionwidgets',
   'filefield', 'imagefield', 'imageapi', 'imageapi_gd', 'imagecache', 'imagecache_ui',
-  'calendar',
+  'calendar', 'date_api', 'date_timezone', 'date',
 
   // some development and administration modules
   'admin', 'adminrole',
