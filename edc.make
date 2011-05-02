@@ -47,7 +47,8 @@ projects[] = skinr
 ; Themes
 projects[] = adaptivetheme
 projects[at_edc][type] = "theme"
-projects[at_edc][location] = "https://github.com/edc-it/at_edc.git"
+projects[at_edc][download][type] = git
+projects[at_edc][download][url] = git://github.com/edc-it/at_edc.git
 
 ; Libraries
 libraries[jquery_ui][download][type] = "get"
