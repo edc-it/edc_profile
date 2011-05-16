@@ -24,7 +24,7 @@ function edc_profile_modules() {
   'calendar', 'date_api', 'date_timezone', 'date', 'jquery_ui', 'date_popup',
 
   // some development and administration modules
-  'admin', 'adminrole',
+  'admin', 'adminrole', 'features', 'strongarm',
   'advanced_help', 'devel', 'environment_indicator', 'reroute_email',
   );
 }
