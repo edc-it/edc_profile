@@ -11,7 +11,9 @@
  *                    HTML & Body
  **********************************************************/
 html {}
-body {}
+body {
+  background: url(images/top_bg.png) repeat-x
+}
 
 /* Admin menu */
 body.admin-menu {}
@@ -184,10 +186,14 @@ a:focus {}
  *                 Header Elements
  **********************************************************/
 /* #header wraps #branding, #search-box-top and #header-blocks. */
-#header {}
+#header {
+  min-height: 90px;
+}
 
 /* #branding wraps #logo, #site-name and #site-slogan. */
-#branding {}
+#branding {
+  width: 100%;
+}
 
 /* Logo and Site Name wrapper. */
 .logo-site-name {}
@@ -204,18 +210,31 @@ div.logo-site-name strong {}
 
 /* By default the span is set to display:block, you can display:inline
    or float the elements to get them all on one line. */
-.logo-site-name span {}
+.logo-site-name span {
+  display: inline;
+}
 
 /* Logo and Site Name SPAN wrappers. */
 span#logo {}
-span#site-name {}
+span#site-name {
+  position: absolute;
+  top: 25px;
+}
+
+#logo img {
+  border: 1px solid #FFF;
+  margin: 5px 1em;
+}
 
 /* Override default pseudo class styles. */
-#site-name a:link    {}
-#site-name a:visited {}
-#site-name a:hover   {}
-#site-name a:focus   {}
-#site-name a:active  {}
+#site-name a:link    {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+#site-name a:visited {  color: #FFFFFF;}
+#site-name a:hover   {  color: #FFFFFF;}
+#site-name a:focus   {  color: #FFFFFF;}
+#site-name a:active  {  color: #FFFFFF;}
 
 /* Site slogan. */
 #site-slogan {}
