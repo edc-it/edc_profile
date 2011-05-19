@@ -13,7 +13,7 @@ function edc_profile_modules() {
   'help', 'menu', 'taxonomy', 'path', 'dblog',
 
   // contrib modules
-  'views', 'views_ui','token', 'pathauto',
+  'views', 'views_ui','token', 'pathauto', 'ctools',
 
   // theme layer
   'skinr',

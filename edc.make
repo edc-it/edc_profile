@@ -45,6 +45,7 @@ projects[] = date
 projects[] = calendar
 projects[] = jquery_ui
 projects[] = skinr
+projects[] = ctools
 
 ; Themes
 projects[] = adaptivetheme
