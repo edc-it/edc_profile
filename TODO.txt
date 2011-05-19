@@ -1,0 +1,5 @@
+EDC Profile todo list
+
+* enable permissions for anonymous on environment_indicator
+* block user_login to sidebar_first
+* hide skip navigation (this seems to be set, but something needs flushing)
