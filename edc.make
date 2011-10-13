@@ -44,6 +44,7 @@ projects[] = advanced_help
 projects[] = date
 projects[] = calendar
 projects[] = jquery_ui
+projects[] = libraries
 projects[] = skinr
 projects[] = ctools
 
@@ -57,4 +58,4 @@ projects[at_edc][download][url] = git://github.com/edc-it/at_edc.git
 libraries[jquery_ui][download][type] = "get"
 libraries[jquery_ui][download][url] = "http://jquery-ui.googlecode.com/files/jquery.ui-1.6.zip"
 libraries[jquery_ui][directory_name] = "jquery.ui"
-libraries[jquery_ui][destination] = "modules/jquery_ui"
+libraries[jquery_ui][destination] = "libraries/"
