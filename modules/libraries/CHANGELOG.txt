@@ -1,12 +1,7 @@
-// $Id: CHANGELOG.txt,v 1.25.2.1 2011/01/27 02:31:41 sun Exp $
+// $Id: CHANGELOG.txt,v 1.2.2.4 2011/01/27 02:25:40 sun Exp $
 
-Libraries 7.x-1.x, xxxx-xx-xx
+Libraries 6.x-1.x, xxxx-xx-xx
 -----------------------------
-
-
-Libraries 7.x-1.0, 2010-01-27
------------------------------
-#743522 by sun: Ported to D7.
 
 
 Libraries 6.x-1.0, 2010-01-27

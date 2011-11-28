@@ -64,11 +64,11 @@ to jQuery UI 1.7, you can get around this by doing the following:
 
 * Put the downloaded archive into the directory:
 
-    /sites/all/libraries/jquery.ui-1.7.zip
+    /sites/all/libraries/jquery-ui-1.7.zip
 
 * Extract the archive.  This will create the following sub-directory:
 
-    /sites/all/libraries/jquery.ui-1.7/
+    /sites/all/libraries/jquery-ui-1.7/
 
 * Rename the sub-directory into "jquery.ui":
 
@@ -108,11 +108,13 @@ the following changes:
   how to use them. The required ui.core file is automatically included, as is
   effects.core if you include any effects files.
 
--- CONTACT --
 
-Current maintainers:
+-- CREDITS --
+
+Current maintainer:
+* Daniel F. Kudwien (sun) - http://drupal.org/user/54136
+
+Original authors:
 * Jeff Robbins (jjeff)
 * Angela Byron (webchick)
-* Addison Berry (add1sun)
-* Daniel F. Kudwien (sun) - http://drupal.org/user/54136
 

@@ -1,6 +1,8 @@
 
 jQuery UI 6.x-1.x, xxxx-xx-xx
 -----------------------------
+#1182776 by ohnobinki: Fixed download package file names in README.txt.
+#921726 by add1sun: Fixed maintainers in README.txt.
 
 
 jQuery UI 6.x-1.x, 2011-06-16

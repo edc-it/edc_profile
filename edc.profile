@@ -21,7 +21,7 @@ function edc_profile_modules() {
   // cck and submodules
   'content', 'text', 'number', 'optionwidgets',
   'filefield', 'imagefield', 'imageapi', 'imageapi_gd', 'imagecache', 'imagecache_ui',
-  'calendar', 'date_api', 'date_timezone', 'date', 'jquery_ui', 'libraries', 'date_popup',
+  'calendar', 'date_api', 'date_timezone', 'date', 'libraries', 'jquery_ui', 'date_popup',
 
   // some development and administration modules
   'admin', 'adminrole', 'features', 'strongarm',
